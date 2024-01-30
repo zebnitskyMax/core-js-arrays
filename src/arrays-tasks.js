@@ -661,8 +661,27 @@ function shiftArray(arr, n) {
  *   sortDigitNamesByNumericOrder([ 'nine','eight','nine','eight' ]) => [ 'eight','eight','nine','nine']
  *   sortDigitNamesByNumericOrder([ 'one','one','one','zero' ]) => [ 'zero','one','one','one' ]
  */
-function sortDigitNamesByNumericOrder(/* arr */) {
-  throw new Error('Not implemented');
+function sortDigitNamesByNumericOrder(arr) {
+  // throw new Error('Not implemented');
+  if (typeof arr === 'undefined') return [];
+  const obj = {
+    zero: 0,
+    one: 1,
+    two: 2,
+    three: 3,
+    four: 4,
+    five: 5,
+    six: 6,
+    seven: 7,
+    eight: 8,
+    nine: 9,
+  };
+  // const objectValue = Object.entries(obj);
+  // console.log(objectValue);
+  // console.log(objectValue[0]);
+  // return arr1.filter((el) => arr2.includes(el));
+  // return arr.filter((el) => objectValue.includes(el));
+  return arr.sort((a, b) => obj[a] - obj[b]);
 }
 
 /**
@@ -686,6 +705,12 @@ function sortDigitNamesByNumericOrder(/* arr */) {
  */
 function swapHeadAndTail(/* arr */) {
   throw new Error('Not implemented');
+  // if (typeof arr === 'undefined') return [];
+  // if (arr.length === 1) return arr;
+  // const newArr = arr.slice(0, arr.length / 2);
+  // console.log(arr.slice(0, Math.floor(arr.length / 2)));
+  // console.log(newArr);
+  // return newArr;
 }
 
 module.exports = {
