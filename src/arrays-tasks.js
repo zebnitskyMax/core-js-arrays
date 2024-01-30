@@ -711,7 +711,6 @@ function swapHeadAndTail(arr) {
     arr.length % 2 === 0 ? Math.floor(arr.length / 2) : arr.length / 2;
   const newArr = arr.splice(0, findLength);
   const stayCentre = arr.splice(-findLength);
-  console.log(arr.concat(newArr));
   return stayCentre.concat(arr).concat(newArr);
 }
 
